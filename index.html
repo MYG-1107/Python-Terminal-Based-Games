@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Games Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Game Portal</h1>
+    <label for="username">Enter Your Name:</label>
+    <input type="text" id="username" placeholder="Your name">
+    
+    <h2>Select a Game</h2>
+    <button onclick="startGame('word-chain')">Word Chain</button>
+    <button onclick="startGame('hangman')">Hangman</button>
+    <!-- Add buttons for other games here -->
+
+    <div id="game-area"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
