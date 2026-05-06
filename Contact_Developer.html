@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevForge • Contact Our Team</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap');
+        
+        :root {
+            --primary: #00ff9d;
+            --dark: #0a0a0a;
+            --gray: #1a1a1a;
+        }
+        
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            background: var(--dark);
+            color: #eee;
+            font-family: 'Inter', system-ui;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #111, #1a1a1a);
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--primary);
+        }
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--primary), #00cc7a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        h1 { font-size: 2.8rem; margin-bottom: 10px; }
+        .tagline { font-size: 1.3rem; opacity: 0.9; }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 40px;
+            margin: 80px 0;
+        }
+        
+        .dev-card {
+            background: var(--gray);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid #222;
+            transition: all 0.4s ease;
+        }
+        .dev-card:hover {
+            transform: translateY(-15px);
+            border-color: var(--primary);
+            box-shadow: 0 30px 60px rgba(0, 255, 157, 0.15);
+        }
+        
+        .dev-header {
+            height: 220px;
+            background: linear-gradient(135deg, #1a1a1a, #222);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .avatar {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 6px solid var(--primary);
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--primary);
+        }
+        
+        .dev-info {
+            padding: 30px;
+        }
+        .dev-name {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+        .dev-title {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            background: var(--primary);
+            color: #000;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            margin: 10px 5px;
+            transition: all 0.3s;
+        }
+        .contact-btn:hover {
+            transform: scale(1.05);
+            background: #fff;
+        }
+        
+        .section {
+            margin: 100px 0;
+        }
+        h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        h2:after {
+            content: '';
+            width: 80px;
+            height: 3px;
+            background: var(--primary);
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        footer {
+            background: #000;
+            padding: 60px 0 30px;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+        
+        .social-links a {
+            color: #aaa;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        .social-links a:hover { color: var(--primary); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">DEVFORGE</div>
+            <h1>Meet The Developers</h1>
+            <p class="tagline">Creators of Terminal Games Arcade & Modern Web Experiences</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="team-grid">
+            
+            <!-- Developer 1 -->
+            <div class="dev-card">
+                <div class="dev-header">
+                    <div class="avatar">👨‍💻</div>
+                </div>
+                <div class="dev-info">
+                    <h2 class="dev-name">Mallarapu Yaswanth</h2>
+                    <p class="dev-title">Full Stack Software Engineer • AI/ML Enthusiast</p>
+                    <p><strong>Current Role:</strong> Software Engineer & Administrative Developer at <strong>SITER Academy, Norway</strong></p>
+                    <p><strong>Education:</strong> B.Tech CSE (AI & ML), Vaagdevi College of Engineering, Warangal</p>
+                    <p><strong>Specialties:</strong> Full Stack Development, Python, AI/ML, AWS, IoT, Terminal Applications</p>
+                    
+                    <div style="margin: 25px 0;">
+                        <a href="https://www.linkedin.com/in/my2004/" target="_blank" class="contact-btn">LinkedIn</a>
+                        <a href="https://github.com/MYG-1107" target="_blank" class="contact-btn">GitHub</a>
+                        <a href="https://myg-1107.github.io/Portfolio-Mallarapu-Yaswanth/" target="_blank" class="contact-btn">Portfolio</a>
+                    </div>
+                    
+                    <p><strong>Email:</strong> mallarapuyaswanth05@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 86399 75852</p>
+                    <p><strong>Location:</strong> Warangal / Khammam, Telangana, India</p>
+                </div>
+            </div>
+
+            <!-- Developer 2 -->
+            <div class="dev-card">
+                <div class="dev-header">
+                    <div class="avatar">🧑‍💻</div>
+                </div>
+                <div class="dev-info">
+                    <h2 class="dev-name">Puppireddy Vishwateja</h2>
+                    <p class="dev-title">Frontend Developer • UI/UX Specialist</p>
+                    <p><strong>Education:</strong> Vaagdevi College of Engineering, Hanamkonda</p>
+                    <p><strong>Specialties:</strong> Frontend Development, UI/UX Design, Modern Web Interfaces, Blogging on Frontend Practices</p>
+                    
+                    <div style="margin: 25px 0;">
+                        <a href="https://in.linkedin.com/in/vishwateja-puppireddy-7919a52a2" target="_blank" class="contact-btn">LinkedIn</a>
+                        <a href="https://frontenduiuxbloger.blogspot.com/" target="_blank" class="contact-btn">Blog</a>
+                    </div>
+                    
+                    <p><strong>Location:</strong> Warangal / Hanamkonda, Telangana, India</p>
+                    <p><strong>Passionate about:</strong> Creating clean, responsive, and user-centric web experiences</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Get In Touch</h2>
+            <p style="text-align:center; font-size:1.3rem; max-width:700px; margin:0 auto 40px;">
+                Have a project in mind? Want to collaborate on open-source games, AI tools, or full-stack applications?<br>
+                We'd love to hear from you!
+            </p>
+            
+            <div style="text-align:center;">
+                <a href="mailto:mallarapuyaswanth05@gmail.com" class="contact-btn" style="font-size:1.4rem; padding:18px 50px;">
+                    Send Email to Team
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 DevForge • Built by Mallarapu Yaswanth & Puppireddy Vishwateja</p>
+        <div class="social-links" style="margin-top:20px;">
+            <a href="https://github.com/MYG-1107" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/my2004/" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
